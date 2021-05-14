@@ -1,4 +1,4 @@
-def selectionSort(list: list) -> list:
+def selectionSort(list: list, key='') -> list:
     
     for i in range(len(list)):
         min_idx = i
@@ -8,5 +8,8 @@ def selectionSort(list: list) -> list:
                 min_idx = j
         
         list[i], list[min_idx] = list[min_idx], list[i]
+    
+    if key == ' reverse':
+        list.reverse()
 
     return list
