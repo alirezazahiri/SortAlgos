@@ -9,7 +9,7 @@ def selectionSort(list: list, key='') -> list:
         
         list[i], list[min_idx] = list[min_idx], list[i]
     
-    if key == ' reverse':
+    if key.casefold() == 'reverse':
         list.reverse()
 
     return list
