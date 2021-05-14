@@ -1,4 +1,4 @@
-def merge_sort(list: list, key='') -> list:
+def mergeSort(list: list, key='') -> list:
     n = len(list)
 
     if n <= 1:
@@ -6,8 +6,8 @@ def merge_sort(list: list, key='') -> list:
     
     mid = n // 2
 
-    L = merge_sort(list[:mid])
-    R = merge_sort(list[mid:])
+    L = mergeSort(list[:mid])
+    R = mergeSort(list[mid:])
 
     return merge(L, R, key)
 
